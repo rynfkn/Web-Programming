@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5vh;
+  padding-left: 5vh;
+  background-color: #16213e;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #00adb5;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.webname {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+
+/* Homepages Styling */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 90vh;
+}
+
+.homepage h1, h2 {
+  margin: 0.4rem;
+}
+
+.name {
+  color: #00adb5;
+}
+
+/* About Styling */
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+
+.profile h2 {
+  color: #00adb5 ;
+  font-size: 2rem;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  margin: 1rem;
+  width: 50%  ;
+}
+
+/* hometown styling */
+.hometown {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.hometown-name h1 {
+  font-size: 2.5rem;
+  color: #00adb5;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.hometown-picture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hometown-picture img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hometown-picture img:hover {
+  transform: scale(1.05);
+}
+
+.hometown-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.hometown-description p {
+  margin: 1rem 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Styling for Hometown Page */
+@media (max-width: 768px) {
+  .hometown-picture {
+    flex-direction: column;
+  }
+
+  .hometown-picture img {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .hometown-name h1 {
+    font-size: 2rem;
+  }
+
+  .hometown-description p {
+    width: 90%;
+  }
+}
+
+/* Food Styling */
+.food {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #0f3460;
+  border-radius: 10px;
+}
+
+.food-name h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+}
+
+.food-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #eaeaea;
+  margin-bottom: 2rem;
+}
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.food-picture {
+  flex: 1;
+}
+
+.food-picture img {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the images cover the area without distortion */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-picture img:hover {
+  transform: scale(1.05);
+}
+
+.food-description {
+  flex: 2;
+  padding-left: 1.5rem;
+}
+
+.food-description h2 {
+  font-size: 1.8rem;
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+.food-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+/* Responsive Styling for Food Page */
+@media (max-width: 768px) {
+  .food-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .food-picture img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .food-description {
+    padding-left: 0;
+  }
+}
+
+/* tourist styling */
+
+.tourist {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #0f3460;
+  border-radius: 10px;
+}
+
+.tourist-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00adb5;
+}
+
+.tourist-intro h1 {
+  font-size: 2.5rem;
+}
+
+.tourist-intro p {
+  font-size: 1.2rem;
+  color: #eaeaea;
+}
+
+.tourist-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tourist-item div {
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+  background-color: #16213e;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tourist-item img {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the images cover the area without distortion */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.tourist-item h2 {
+  font-size: 1.8rem;
+  color: #00adb5;
+  margin-bottom: 0.5rem;
+}
+
+.tourist-item p {
+  font-size: 1.1rem;
+  color: #eaeaea;
+}
+
+.maps-button {
+  background-color: #00adb5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.maps-button:hover {
+  background-color: #007d8f;
+}
+
+/* Responsive Styling for Tourist Page */
+@media (max-width: 768px) {
+  .tourist-item div {
+    flex: 1 1 100%; /* Stack items vertically on smaller screens */
+  }
+}
